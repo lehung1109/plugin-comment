@@ -1,0 +1,109 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Martek Product\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-13 15:47+0000\n"
+"PO-Revision-Date: 2021-08-13 16:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: Tiếng Việt\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.3; wp-5.8\n"
+"X-Domain: martek-product"
+
+#: src/Taxonomy/TaxonomyCategory.php:14
+msgid "Add category"
+msgstr "Thêm danh mục mới"
+
+#: src/ProductType.php:14
+msgid "Add New"
+msgstr "Thêm mới"
+
+#: src/ProductType.php:13
+msgid "Add product"
+msgstr "Thêm sản phẩm"
+
+#: src/ProductType.php:16
+msgid "All products"
+msgstr "Tất cả sản phẩm"
+
+#. Author of the plugin
+msgid "Anthony"
+msgstr ""
+
+#: src/Taxonomy/TaxonomyCategory.php:13
+msgid "Categories"
+msgstr "Danh mục"
+
+#: src/ProductType.php:18
+msgid "Edit product"
+msgstr "Sửa sản phẩm"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://martek.vn"
+msgstr ""
+
+#: src/ProductService.php:119
+msgid "In stock"
+msgstr "Còn hàng"
+
+#. Name of the plugin
+msgid "Martek Product"
+msgstr ""
+
+#: src/Taxonomy/TaxonomyCategory.php:15
+msgid "New category"
+msgstr "Thêm danh mục mới"
+
+#: src/ProductType.php:20
+msgid "No products found"
+msgstr "Không tìm thấy sản phẩm"
+
+#: src/ProductType.php:21
+msgid "No products found in Trash"
+msgstr "Không tìm thấy sản phẩm trong thùng rác"
+
+#: views/single/order-button.php:13
+msgid "Order now"
+msgstr "Đặt mua nhanh"
+
+#: views/single/requirement-button.php:3
+msgid "Order requirement"
+msgstr "Đặt theo yêu cầu"
+
+#: src/ProductService.php:116
+msgid "Out of stock"
+msgstr "Hết hàng"
+
+#: views/single/price.php:2
+msgid "Price: contact"
+msgstr "Giá: Liên hệ"
+
+#: src/ProductType.php:15
+msgid "Product"
+msgstr "Sản phẩm"
+
+#: src/ProductType.php:17
+msgid "product"
+msgstr "sản phẩm"
+
+#. Description of the plugin
+msgid "Product type."
+msgstr ""
+
+#: views/single/quantity.php:5
+msgid "Quantity: "
+msgstr "Số lượng: "
+
+#: src/ProductType.php:19
+msgid "Search products"
+msgstr "Tìm kiếm sản phẩm"
+
+#: views/single/status.php:5
+msgid "Status: "
+msgstr "Tình trạng: "

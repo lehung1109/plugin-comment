@@ -1,0 +1,26 @@
+.mp-gallery-main-item {
+    position: relative;
+}
+
+.mp-gallery-main-item::before {
+    content: "";
+    float: left;
+    width: 1px;
+    margin-left: -1px;
+    padding-top: 100%;
+}
+
+.mp-gallery-main-item::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mp-gallery-main-item img {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    object-fit: cover;
+}

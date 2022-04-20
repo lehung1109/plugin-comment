@@ -1,0 +1,133 @@
+[16-Mar-2022 11:26:11 UTC] DUP PRO:Error deactivate license: ACTIVATION_RESPONSE_INVALID
+[17-Mar-2022 07:04:35 UTC] RedisException: Connection refused in /home/noiphoqu/public_html/wp-content/object-cache.php:643
+Stack trace:
+#0 /home/noiphoqu/public_html/wp-content/object-cache.php(643): Redis->connect('127.0.0.1', 6379, 1, '', 0, 1)
+#1 /home/noiphoqu/public_html/wp-content/object-cache.php(485): WP_Object_Cache->connect_using_phpredis(Array)
+#2 /home/noiphoqu/public_html/wp-content/object-cache.php(178): WP_Object_Cache->__construct(true)
+#3 /home/noiphoqu/public_html/wp-includes/load.php(729): wp_cache_init()
+#4 /home/noiphoqu/public_html/wp-settings.php(131): wp_start_object_cache()
+#5 /home/noiphoqu/public_html/wp-config.php(83): require_once('/home/noiphoqu/...')
+#6 /home/noiphoqu/public_html/wp-load.php(50): require_once('/home/noiphoqu/...')
+#7 /home/noiphoqu/public_html/wp-admin/admin.php(34): require_once('/home/noiphoqu/...')
+#8 /home/noiphoqu/public_html/wp-admin/options-general.php(10): require_once('/home/noiphoqu/...')
+#9 {main}
+[17-Mar-2022 07:04:43 UTC] RedisException: Connection refused in /home/noiphoqu/public_html/wp-content/object-cache.php:643
+Stack trace:
+#0 /home/noiphoqu/public_html/wp-content/object-cache.php(643): Redis->connect('127.0.0.1', 6379, 1, '', 0, 1)
+#1 /home/noiphoqu/public_html/wp-content/object-cache.php(485): WP_Object_Cache->connect_using_phpredis(Array)
+#2 /home/noiphoqu/public_html/wp-content/object-cache.php(178): WP_Object_Cache->__construct(true)
+#3 /home/noiphoqu/public_html/wp-includes/load.php(729): wp_cache_init()
+#4 /home/noiphoqu/public_html/wp-settings.php(131): wp_start_object_cache()
+#5 /home/noiphoqu/public_html/wp-config.php(83): require_once('/home/noiphoqu/...')
+#6 /home/noiphoqu/public_html/wp-load.php(50): require_once('/home/noiphoqu/...')
+#7 /home/noiphoqu/public_html/wp-admin/admin.php(34): require_once('/home/noiphoqu/...')
+#8 /home/noiphoqu/public_html/wp-admin/plugins.php(10): require_once('/home/noiphoqu/...')
+#9 {main}
+[17-Mar-2022 07:04:52 UTC] RedisException: Connection refused in /home/noiphoqu/public_html/wp-content/object-cache.php:643
+Stack trace:
+#0 /home/noiphoqu/public_html/wp-content/object-cache.php(643): Redis->connect('127.0.0.1', 6379, 1, '', 0, 1)
+#1 /home/noiphoqu/public_html/wp-content/object-cache.php(485): WP_Object_Cache->connect_using_phpredis(Array)
+#2 /home/noiphoqu/public_html/wp-content/object-cache.php(178): WP_Object_Cache->__construct(true)
+#3 /home/noiphoqu/public_html/wp-includes/load.php(729): wp_cache_init()
+#4 /home/noiphoqu/public_html/wp-settings.php(131): wp_start_object_cache()
+#5 /home/noiphoqu/public_html/wp-config.php(83): require_once('/home/noiphoqu/...')
+#6 /home/noiphoqu/public_html/wp-load.php(50): require_once('/home/noiphoqu/...')
+#7 /home/noiphoqu/public_html/wp-admin/admin-ajax.php(22): require_once('/home/noiphoqu/...')
+#8 {main}
+[17-Mar-2022 07:05:03 UTC] RedisException: Connection refused in /home/noiphoqu/public_html/wp-content/object-cache.php:643
+Stack trace:
+#0 /home/noiphoqu/public_html/wp-content/object-cache.php(643): Redis->connect('127.0.0.1', 6379, 1, '', 0, 1)
+#1 /home/noiphoqu/public_html/wp-content/object-cache.php(485): WP_Object_Cache->connect_using_phpredis(Array)
+#2 /home/noiphoqu/public_html/wp-content/object-cache.php(178): WP_Object_Cache->__construct(true)
+#3 /home/noiphoqu/public_html/wp-includes/load.php(729): wp_cache_init()
+#4 /home/noiphoqu/public_html/wp-settings.php(131): wp_start_object_cache()
+#5 /home/noiphoqu/public_html/wp-config.php(83): require_once('/home/noiphoqu/...')
+#6 /home/noiphoqu/public_html/wp-load.php(50): require_once('/home/noiphoqu/...')
+#7 /home/noiphoqu/public_html/wp-admin/admin-post.php(19): require_once('/home/noiphoqu/...')
+#8 {main}
+[17-Mar-2022 07:05:05 UTC] RedisException: Connection refused in /home/noiphoqu/public_html/wp-content/object-cache.php:643
+Stack trace:
+#0 /home/noiphoqu/public_html/wp-content/object-cache.php(643): Redis->connect('127.0.0.1', 6379, 1, '', 0, 1)
+#1 /home/noiphoqu/public_html/wp-content/object-cache.php(485): WP_Object_Cache->connect_using_phpredis(Array)
+#2 /home/noiphoqu/public_html/wp-content/object-cache.php(178): WP_Object_Cache->__construct(true)
+#3 /home/noiphoqu/public_html/wp-includes/load.php(729): wp_cache_init()
+#4 /home/noiphoqu/public_html/wp-settings.php(131): wp_start_object_cache()
+#5 /home/noiphoqu/public_html/wp-config.php(83): require_once('/home/noiphoqu/...')
+#6 /home/noiphoqu/public_html/wp-load.php(50): require_once('/home/noiphoqu/...')
+#7 /home/noiphoqu/public_html/wp-admin/admin-ajax.php(22): require_once('/home/noiphoqu/...')
+#8 {main}
+[17-Mar-2022 07:05:20 UTC] RedisException: Connection refused in /home/noiphoqu/public_html/wp-content/object-cache.php:643
+Stack trace:
+#0 /home/noiphoqu/public_html/wp-content/object-cache.php(643): Redis->connect('127.0.0.1', 6379, 1, '', 0, 1)
+#1 /home/noiphoqu/public_html/wp-content/object-cache.php(485): WP_Object_Cache->connect_using_phpredis(Array)
+#2 /home/noiphoqu/public_html/wp-content/object-cache.php(178): WP_Object_Cache->__construct(true)
+#3 /home/noiphoqu/public_html/wp-includes/load.php(729): wp_cache_init()
+#4 /home/noiphoqu/public_html/wp-settings.php(131): wp_start_object_cache()
+#5 /home/noiphoqu/public_html/wp-config.php(83): require_once('/home/noiphoqu/...')
+#6 /home/noiphoqu/public_html/wp-load.php(50): require_once('/home/noiphoqu/...')
+#7 /home/noiphoqu/public_html/wp-admin/admin.php(34): require_once('/home/noiphoqu/...')
+#8 /home/noiphoqu/public_html/wp-admin/options-general.php(10): require_once('/home/noiphoqu/...')
+#9 {main}
+[17-Mar-2022 07:05:31 UTC] RedisException: Connection refused in /home/noiphoqu/public_html/wp-content/object-cache.php:643
+Stack trace:
+#0 /home/noiphoqu/public_html/wp-content/object-cache.php(643): Redis->connect('127.0.0.1', 6379, 1, '', 0, 1)
+#1 /home/noiphoqu/public_html/wp-content/object-cache.php(485): WP_Object_Cache->connect_using_phpredis(Array)
+#2 /home/noiphoqu/public_html/wp-content/object-cache.php(178): WP_Object_Cache->__construct(true)
+#3 /home/noiphoqu/public_html/wp-includes/load.php(729): wp_cache_init()
+#4 /home/noiphoqu/public_html/wp-settings.php(131): wp_start_object_cache()
+#5 /home/noiphoqu/public_html/wp-config.php(83): require_once('/home/noiphoqu/...')
+#6 /home/noiphoqu/public_html/wp-load.php(50): require_once('/home/noiphoqu/...')
+#7 /home/noiphoqu/public_html/wp-admin/admin-ajax.php(22): require_once('/home/noiphoqu/...')
+#8 {main}
+[17-Mar-2022 07:05:35 UTC] RedisException: Connection refused in /home/noiphoqu/public_html/wp-content/object-cache.php:643
+Stack trace:
+#0 /home/noiphoqu/public_html/wp-content/object-cache.php(643): Redis->connect('127.0.0.1', 6379, 1, '', 0, 1)
+#1 /home/noiphoqu/public_html/wp-content/object-cache.php(485): WP_Object_Cache->connect_using_phpredis(Array)
+#2 /home/noiphoqu/public_html/wp-content/object-cache.php(178): WP_Object_Cache->__construct(true)
+#3 /home/noiphoqu/public_html/wp-includes/load.php(729): wp_cache_init()
+#4 /home/noiphoqu/public_html/wp-settings.php(131): wp_start_object_cache()
+#5 /home/noiphoqu/public_html/wp-config.php(83): require_once('/home/noiphoqu/...')
+#6 /home/noiphoqu/public_html/wp-load.php(50): require_once('/home/noiphoqu/...')
+#7 /home/noiphoqu/public_html/wp-admin/admin.php(34): require_once('/home/noiphoqu/...')
+#8 /home/noiphoqu/public_html/wp-admin/options-general.php(10): require_once('/home/noiphoqu/...')
+#9 {main}
+[17-Mar-2022 07:06:34 UTC] RedisException: Connection refused in /home/noiphoqu/public_html/wp-content/object-cache.php:643
+Stack trace:
+#0 /home/noiphoqu/public_html/wp-content/object-cache.php(643): Redis->connect('127.0.0.1', 6379, 1, '', 0, 1)
+#1 /home/noiphoqu/public_html/wp-content/object-cache.php(485): WP_Object_Cache->connect_using_phpredis(Array)
+#2 /home/noiphoqu/public_html/wp-content/object-cache.php(178): WP_Object_Cache->__construct(true)
+#3 /home/noiphoqu/public_html/wp-includes/load.php(729): wp_cache_init()
+#4 /home/noiphoqu/public_html/wp-settings.php(131): wp_start_object_cache()
+#5 /home/noiphoqu/public_html/wp-config.php(83): require_once('/home/noiphoqu/...')
+#6 /home/noiphoqu/public_html/wp-load.php(50): require_once('/home/noiphoqu/...')
+#7 /home/noiphoqu/public_html/wp-admin/admin-ajax.php(22): require_once('/home/noiphoqu/...')
+#8 {main}
+[17-Mar-2022 07:06:56 UTC] RedisException: Connection refused in /home/noiphoqu/public_html/wp-content/object-cache.php:643
+Stack trace:
+#0 /home/noiphoqu/public_html/wp-content/object-cache.php(643): Redis->connect('127.0.0.1', 6379, 1, '', 0, 1)
+#1 /home/noiphoqu/public_html/wp-content/object-cache.php(485): WP_Object_Cache->connect_using_phpredis(Array)
+#2 /home/noiphoqu/public_html/wp-content/object-cache.php(178): WP_Object_Cache->__construct(true)
+#3 /home/noiphoqu/public_html/wp-includes/load.php(729): wp_cache_init()
+#4 /home/noiphoqu/public_html/wp-settings.php(131): wp_start_object_cache()
+#5 /home/noiphoqu/public_html/wp-config.php(83): require_once('/home/noiphoqu/...')
+#6 /home/noiphoqu/public_html/wp-load.php(50): require_once('/home/noiphoqu/...')
+#7 /home/noiphoqu/public_html/wp-admin/admin.php(34): require_once('/home/noiphoqu/...')
+#8 /home/noiphoqu/public_html/wp-admin/options-general.php(10): require_once('/home/noiphoqu/...')
+#9 {main}
+[17-Mar-2022 07:07:06 UTC] RedisException: Connection refused in /home/noiphoqu/public_html/wp-content/object-cache.php:643
+Stack trace:
+#0 /home/noiphoqu/public_html/wp-content/object-cache.php(643): Redis->connect('127.0.0.1', 6379, 1, '', 0, 1)
+#1 /home/noiphoqu/public_html/wp-content/object-cache.php(485): WP_Object_Cache->connect_using_phpredis(Array)
+#2 /home/noiphoqu/public_html/wp-content/object-cache.php(178): WP_Object_Cache->__construct(true)
+#3 /home/noiphoqu/public_html/wp-includes/load.php(729): wp_cache_init()
+#4 /home/noiphoqu/public_html/wp-settings.php(131): wp_start_object_cache()
+#5 /home/noiphoqu/public_html/wp-config.php(83): require_once('/home/noiphoqu/...')
+#6 /home/noiphoqu/public_html/wp-load.php(50): require_once('/home/noiphoqu/...')
+#7 /home/noiphoqu/public_html/wp-admin/admin-ajax.php(22): require_once('/home/noiphoqu/...')
+#8 {main}
+[23-Mar-2022 03:19:51 UTC] Cơ sở dữ liệu của WordPress gặp lỗi Duplicate entry '763-14' for key 'PRIMARY' với truy vấn INSERT INTO `wp_yoast_indexable_hierarchy` (`indexable_id`, `ancestor_id`, `depth`, `blog_id`) VALUES ('763', '14', '2', '1') yêu cầu bởi do_action('wp_ajax_save-attachment'), WP_Hook->do_action, WP_Hook->apply_filters, wp_ajax_save_attachment, wp_update_post, wp_insert_attachment, wp_insert_post, do_action('edit_attachment'), WP_Hook->do_action, WP_Hook->apply_filters, Yoast\WP\SEO\Integrations\Watchers\Indexable_Post_Watcher->build_indexable, Yoast\WP\SEO\Builders\Indexable_Builder->build_for_id_and_type, Yoast\WP\SEO\Builders\Indexable_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->save_ancestors, Yoast\WP\SEO\Repositories\Indexable_Hierarchy_Repository->add_ancestor, Yoast\WP\Lib\Model->save, Yoast\WP\Lib\ORM->save, Yoast\WP\Lib\ORM::execute
+[23-Mar-2022 03:19:51 UTC] Cơ sở dữ liệu của WordPress gặp lỗi Duplicate entry '763-759' for key 'PRIMARY' với truy vấn INSERT INTO `wp_yoast_indexable_hierarchy` (`indexable_id`, `ancestor_id`, `depth`, `blog_id`) VALUES ('763', '759', '1', '1') yêu cầu bởi do_action('wp_ajax_save-attachment'), WP_Hook->do_action, WP_Hook->apply_filters, wp_ajax_save_attachment, wp_update_post, wp_insert_attachment, wp_insert_post, do_action('edit_attachment'), WP_Hook->do_action, WP_Hook->apply_filters, Yoast\WP\SEO\Integrations\Watchers\Indexable_Post_Watcher->build_indexable, Yoast\WP\SEO\Builders\Indexable_Builder->build_for_id_and_type, Yoast\WP\SEO\Builders\Indexable_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->save_ancestors, Yoast\WP\SEO\Repositories\Indexable_Hierarchy_Repository->add_ancestor, Yoast\WP\Lib\Model->save, Yoast\WP\Lib\ORM->save, Yoast\WP\Lib\ORM::execute
+[23-Mar-2022 13:40:53 UTC] Cơ sở dữ liệu của WordPress gặp lỗi Duplicate entry '789-14' for key 'PRIMARY' với truy vấn INSERT INTO `wp_yoast_indexable_hierarchy` (`indexable_id`, `ancestor_id`, `depth`, `blog_id`) VALUES ('789', '14', '2', '1') yêu cầu bởi do_action('wp_ajax_save-attachment'), WP_Hook->do_action, WP_Hook->apply_filters, wp_ajax_save_attachment, wp_update_post, wp_insert_attachment, wp_insert_post, do_action('edit_attachment'), WP_Hook->do_action, WP_Hook->apply_filters, Yoast\WP\SEO\Integrations\Watchers\Indexable_Post_Watcher->build_indexable, Yoast\WP\SEO\Builders\Indexable_Builder->build_for_id_and_type, Yoast\WP\SEO\Builders\Indexable_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->save_ancestors, Yoast\WP\SEO\Repositories\Indexable_Hierarchy_Repository->add_ancestor, Yoast\WP\Lib\Model->save, Yoast\WP\Lib\ORM->save, Yoast\WP\Lib\ORM::execute
+[23-Mar-2022 13:40:53 UTC] Cơ sở dữ liệu của WordPress gặp lỗi Duplicate entry '789-786' for key 'PRIMARY' với truy vấn INSERT INTO `wp_yoast_indexable_hierarchy` (`indexable_id`, `ancestor_id`, `depth`, `blog_id`) VALUES ('789', '786', '1', '1') yêu cầu bởi do_action('wp_ajax_save-attachment'), WP_Hook->do_action, WP_Hook->apply_filters, wp_ajax_save_attachment, wp_update_post, wp_insert_attachment, wp_insert_post, do_action('edit_attachment'), WP_Hook->do_action, WP_Hook->apply_filters, Yoast\WP\SEO\Integrations\Watchers\Indexable_Post_Watcher->build_indexable, Yoast\WP\SEO\Builders\Indexable_Builder->build_for_id_and_type, Yoast\WP\SEO\Builders\Indexable_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->save_ancestors, Yoast\WP\SEO\Repositories\Indexable_Hierarchy_Repository->add_ancestor, Yoast\WP\Lib\Model->save, Yoast\WP\Lib\ORM->save, Yoast\WP\Lib\ORM::execute
+[23-Mar-2022 13:45:09 UTC] Cơ sở dữ liệu của WordPress gặp lỗi Duplicate entry '791-14' for key 'PRIMARY' với truy vấn INSERT INTO `wp_yoast_indexable_hierarchy` (`indexable_id`, `ancestor_id`, `depth`, `blog_id`) VALUES ('791', '14', '2', '1') yêu cầu bởi do_action('wp_ajax_save-attachment'), WP_Hook->do_action, WP_Hook->apply_filters, wp_ajax_save_attachment, wp_update_post, wp_insert_attachment, wp_insert_post, do_action('edit_attachment'), WP_Hook->do_action, WP_Hook->apply_filters, Yoast\WP\SEO\Integrations\Watchers\Indexable_Post_Watcher->build_indexable, Yoast\WP\SEO\Builders\Indexable_Builder->build_for_id_and_type, Yoast\WP\SEO\Builders\Indexable_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->save_ancestors, Yoast\WP\SEO\Repositories\Indexable_Hierarchy_Repository->add_ancestor, Yoast\WP\Lib\Model->save, Yoast\WP\Lib\ORM->save, Yoast\WP\Lib\ORM::execute
+[23-Mar-2022 13:45:09 UTC] Cơ sở dữ liệu của WordPress gặp lỗi Duplicate entry '791-786' for key 'PRIMARY' với truy vấn INSERT INTO `wp_yoast_indexable_hierarchy` (`indexable_id`, `ancestor_id`, `depth`, `blog_id`) VALUES ('791', '786', '1', '1') yêu cầu bởi do_action('wp_ajax_save-attachment'), WP_Hook->do_action, WP_Hook->apply_filters, wp_ajax_save_attachment, wp_update_post, wp_insert_attachment, wp_insert_post, do_action('edit_attachment'), WP_Hook->do_action, WP_Hook->apply_filters, Yoast\WP\SEO\Integrations\Watchers\Indexable_Post_Watcher->build_indexable, Yoast\WP\SEO\Builders\Indexable_Builder->build_for_id_and_type, Yoast\WP\SEO\Builders\Indexable_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->build, Yoast\WP\SEO\Builders\Indexable_Hierarchy_Builder->save_ancestors, Yoast\WP\SEO\Repositories\Indexable_Hierarchy_Repository->add_ancestor, Yoast\WP\Lib\Model->save, Yoast\WP\Lib\ORM->save, Yoast\WP\Lib\ORM::execute

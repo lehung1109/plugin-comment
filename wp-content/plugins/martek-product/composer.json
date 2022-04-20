@@ -1,0 +1,17 @@
+{
+  "name": "martek/product",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Anthony"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Product\\": "src"
+    }
+  },
+  "require": {
+    "premmerce/wordpress-sdk": "^2.0"
+  }
+}
