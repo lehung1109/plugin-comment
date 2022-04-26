@@ -26,7 +26,7 @@ $categories = get_sub_field( 'categories' ); ?>
 					$image = get_field( 'image', $acf_term_id );
 					?>
 					<div class="col-6 col-md-4 col-lg-2 d-flex p-1 p-xl-2">
-						<div class="category__item bg-warning w-100 rounded-lg p-2">
+						<div class="category__item bg-secondary w-100 rounded-lg p-2">
 							<a href="<?php echo get_term_link( $category ) ?>"
 							   class="category__link h-100 d-flex d-flex align-items-center justify-content-between">
 								<strong class="category__name"><?php echo $category->name; ?></strong>

@@ -65,7 +65,7 @@ get_header();
 									</div>
 								</div>
 
-								<div class="bg-gradient-danger rounded-lg text-center p-3">
+								<div class="rounded text-center p-3" style="background-color: #14a2f5;">
 									<?php get_template_part( 'templates/form-call-back' ); ?>
 								</div>
 

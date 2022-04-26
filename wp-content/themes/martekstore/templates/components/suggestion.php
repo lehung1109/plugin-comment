@@ -4,7 +4,7 @@ $title = get_sub_field( 'title' );
 ?>
 
 <?php if ( have_rows( 'images' ) ): ?>
-	<div class="suggestion bg-gradient-primary py-4 py-md-6">
+	<div class="suggestion py-4 py-md-6">
 		<div class="container">
 			<div class="suggestion__header d-flex align-items-center mb-3">
 				<?php if ( $icon ) : ?>
@@ -13,7 +13,7 @@ $title = get_sub_field( 'title' );
 					     width="<?php echo $icon['width'] ?>" height="<?php echo $icon['height'] ?>">
 				<?php endif; ?>
 				<?php if ( $title ) : ?>
-					<h2 class="suggestion__title text-white mb-0 pt-1">
+					<h2 class="suggestion__title mb-0 pt-1">
 						<?php echo $title; ?>
 					</h2>
 				<?php endif; ?>

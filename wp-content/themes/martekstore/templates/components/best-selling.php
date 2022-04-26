@@ -2,7 +2,7 @@
 	$icon  = get_sub_field( 'icon' );
 	$title = get_sub_field( 'title' ); ?>
 
-	<div class="best-selling bg-gradient-primary py-4 py-md-6">
+	<div class="best-selling bg-primary py-4 py-md-6">
 		<div class="container">
 			<div class="best-selling__header d-flex align-items-center mb-2">
 				<?php if ( $icon ) : ?>

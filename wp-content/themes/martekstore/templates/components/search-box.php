@@ -4,7 +4,7 @@
 			<div class="input-group">
 				<input type="text" name="s" class="form-control" placeholder="Nhập thông tin tìm kiếm" data-swplive="true" />
 				<div class="input-group-append">
-					<button class="btn btn-warning px-4" type="submit">Tìm kiếm</button>
+					<button class="btn btn-primary px-4" type="submit">Tìm kiếm</button>
 				</div>
 			</div>
 		</form>
