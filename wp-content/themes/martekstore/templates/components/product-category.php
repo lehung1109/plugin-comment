@@ -49,7 +49,7 @@ $query = new wp_query( $args );
 			</div>
 		</div>
 
-		<div class="product-category__items row mx-n1 mx-xl-n2">
+		<div class="product-category__items row mx-n1 mx-lg-n2">
 			<?php foreach ( $query->posts as $post ) : setup_postdata( $post ); ?>
 				<div class="col-6 col-lg-3 p-1 p-lg-2 d-flex">
 					<?php get_template_part( 'templates/product', 'card' ); ?>

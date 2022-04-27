@@ -21,8 +21,8 @@ defined( 'ABSPATH' ) || exit;
 		<?php echo mp_get_price_html( get_the_ID() ); ?>
 	</div>
 	<div class="product-card__actions d-flex justify-content-between">
-		<a href="<?php the_permalink(); ?>" class="btn btn-primary px-6">Đặt ngay</a>
-		<a href="<?php the_permalink(); ?>" class="btn btn-secondary px-4 d-none d-md-block">Chi tiết</a>
+		<a href="<?php the_permalink(); ?>" class="btn btn-primary px-4">Đặt ngay</a>
+		<a href="<?php the_permalink(); ?>" class="btn btn-secondary px-2 d-none d-md-block">Chi tiết</a>
 	</div>
 </div>
 

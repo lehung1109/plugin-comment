@@ -20,77 +20,71 @@ $title  = $meta[$term->taxonomy][$term->term_id]['wpseo_title'] ?? '';
 
 get_header(); ?>
 
-	<main class="main container pt-md-6" id="main">
-		<div class="row bg-white shadow-sm rounded-sm">
-			<div class="content-area col-md-12 p-4">
-				<?php yoast_breadcrumb( '<nav class="yoast-breadcrumb font-size-14 mb-2" id="breadcrumbs">','</nav>' ); ?>
-				<?php
-				if ( have_posts() ) {
-				?>
-				<header class="page-header">
-					<h1>
-						<?php
-						if ( isset( $meta ) && ! empty( $title ) ) :
-							echo apply_filters( 'the_title', $title );
-						else :
-							single_term_title();
-						endif;
-						?>
-					</h1>
+	<main class="main" id="main">
+		<div class="container-lg">
+			<?php yoast_breadcrumb( '<nav class="yoast-breadcrumb font-size-14 mt-2" id="breadcrumbs">','</nav>' ); ?>
+			<hr class="mt-1 mb-2">
+			<div class="page__header">
+				<h1>
+					<?php
+					if ( isset( $meta ) && ! empty( $title ) ) :
+						echo apply_filters( 'the_title', $title );
+					else :
+						single_term_title();
+					endif;
+					?>
+				</h1>
 
-					<?php if ( ! empty( $content_parts['extended'] ) ) : ?>
-						<div class="taxonomy-description entry-content read-more">
-							<input type="checkbox" id="read-more" role="button">
-							<label for="read-more" onclick="">
+				<?php if ( ! empty( $content_parts['extended'] ) ) : ?>
+					<div class="taxonomy-description entry-content read-more">
+						<input type="checkbox" id="read-more" role="button">
+						<label for="read-more" onclick="">
 									<span class="font-weight-bold">
 										Đọc thêm
 										<i class="fa fa-long-arrow-right ml-1" aria-hidden="true"></i>
 									</span>
-								<span class="font-weight-bold">
+							<span class="font-weight-bold">
 										Rút gọn
 									</span>
-							</label>
-							<div class="read-more__excerpt">
-								<?php echo do_shortcode( martek_content($content_parts['main']) ); ?>
-							</div>
-							<div class="read-more__extended">
-								<?php echo do_shortcode( martek_content( $content_parts['extended'] ) ); ?>
-							</div>
+						</label>
+						<div class="read-more__excerpt">
+							<?php echo do_shortcode( martek_content($content_parts['main']) ); ?>
 						</div>
-					<?php else: ?>
-						<div class="taxonomy-description entry-content">
-							<?php echo do_shortcode( martek_content(wpautop($description)) ); ?>
+						<div class="read-more__extended">
+							<?php echo do_shortcode( martek_content( $content_parts['extended'] ) ); ?>
 						</div>
-					<?php endif; ?>
-				</header>
-
-				<div class="page-content">
-					<div class="row">
-						<?php
-						// Start the loop.
-						while ( have_posts() ) {
-							the_post();
-							echo '<div class="col-6 col-lg-3 p-1 p-lg-2 d-flex">';
-							/*
-							 * Include the Post-Format-specific template for the content.
-							 * If you want to override this in a child theme, then include a file
-							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-							 */
-							get_template_part( 'templates/product', 'card' );
-							echo '</div>';
-						}
-						} else {
-							get_template_part( 'templates/content', 'none' );
-						}
-						?>
 					</div>
-				</div>
+				<?php else: ?>
+					<div class="taxonomy-description entry-content">
+						<?php echo do_shortcode( martek_content(wpautop($description)) ); ?>
+					</div>
+				<?php endif; ?>
+			</div>
 
+			<div class="row mx-n1 mx-lg-n2">
 				<?php
-				// Display the pagination component.
-				martek_pagination();
+				if ( have_posts() ) {
+					// Start the loop.
+					while ( have_posts() ) {
+						the_post();
+						echo '<div class="col-6 col-md-4 col-lg-3 p-1 p-lg-2 d-flex">';
+						/*
+						 * Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'templates/product', 'card' );
+						echo '</div>';
+					}
+				} else {
+					get_template_part( 'templates/content', 'none' );
+				}
 				?>
 			</div>
+			<?php
+			// Display the pagination component.
+			martek_pagination();
+			?>
 		</div>
 	</main>
 <?php
