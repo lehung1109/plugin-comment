@@ -81,51 +81,53 @@ defined( 'ABSPATH' ) || exit;
 		<?php endif; ?>
 
 		<div class="header__main d-none d-lg-block py-2 pt-md-3">
-			<div class="container d-flex align-items-center justify-content-between">
-				<div class="header__logo">
-					<?php if ( ! has_custom_logo() ) { ?>
-						<?php if ( is_front_page() && is_home() ) : ?>
-							<h1 class="logo mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
-							                         itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php else : ?>
-							<a class="logo" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
-							   itemprop="url"><?php bloginfo( 'name' ); ?></a>
-						<?php endif; ?>
-						<?php
-					} else {
-						echo '<h1 class="m-0">';
-						the_custom_logo();
-						echo '</h1>';
-					} ?>
-				</div>
-
-				<div class="header__search d-none d-md-block w-50">
-					<form action="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<div class="input-group">
-							<input type="text" name="s" class="form-control" placeholder="Tìm kiếm"
-							       data-swplive="true"/>
-							<div class="input-group-append">
-								<button class="btn btn-primary text-white px-lg-4" type="submit">
-									<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-								</button>
-							</div>
-						</div>
-					</form>
-				</div>
-
-				<?php if ( $phone = get_field( 'phone', 'option' ) ) : ?>
-					<div class="header__phone">
-						<a class="phone--in-header btn btn-primary text-white float-right" href="tel:<?php echo str_replace( ' ', '', $phone ); ?>">
-							<i class="fa fa-phone fa-lg mr-2" aria-hidden="true"></i>
-							<span><?php echo $phone ?></span>
-						</a>
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-between">
+					<div class="header__logo">
+						<?php if ( ! has_custom_logo() ) { ?>
+							<?php if ( is_front_page() && is_home() ) : ?>
+								<h1 class="logo mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
+								                         itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+							<?php else : ?>
+								<a class="logo" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
+								   itemprop="url"><?php bloginfo( 'name' ); ?></a>
+							<?php endif; ?>
+							<?php
+						} else {
+							echo '<h1 class="m-0">';
+							the_custom_logo();
+							echo '</h1>';
+						} ?>
 					</div>
-				<?php endif; ?>
+
+					<div class="header__search d-none d-md-block w-50">
+						<form action="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<div class="input-group">
+								<input type="text" name="s" class="form-control" placeholder="Tìm kiếm"
+								       data-swplive="true"/>
+								<div class="input-group-append">
+									<button class="btn btn-primary text-white px-lg-4" type="submit">
+										<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<?php if ( $phone = get_field( 'phone', 'option' ) ) : ?>
+						<div class="header__phone">
+							<a class="phone--in-header btn btn-primary text-white float-right" href="tel:<?php echo str_replace( ' ', '', $phone ); ?>">
+								<i class="fa fa-phone fa-lg mr-2" aria-hidden="true"></i>
+								<span><?php echo $phone ?></span>
+							</a>
+						</div>
+					<?php endif; ?>
+				</div>
 			</div>
 		</div>
 
 		<div class="header__nav">
-			<div class="container px-md-0">
+			<div class="container">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</div>
 		</div>
