@@ -129,6 +129,11 @@ $box-shadow: 0 .625rem 1.25rem rgba($black, .05) !default;
 
 $zindex-sticky: 10 !default;
 
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$input-btn-focus-width: 0 !default;
+
 /**
  * Import Bootstrap sources
  */
