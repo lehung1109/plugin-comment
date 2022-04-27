@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
 			<div class="header__top" style="background-color: #f4f5f7;">
 				<div class="container d-flex justify-content-center justify-content-md-between">
 					<?php if ( $top_info = get_field( 'top_info', 'option' ) ) : ?>
-						<div class="top__info d-flex align-items-center my-1"><?php echo $top_info; ?></div>
+						<div class="top__info d-flex align-items-center font-size-14 my-1"><?php echo $top_info; ?></div>
 					<?php endif; ?>
 
 					<?php if ( have_rows( 'socials', 'option' ) ): ?>
