@@ -23,7 +23,7 @@ if ( $ads_bottom ) : ?>
 	</div>
 <?php endif; ?>
 
-<footer class="footer">
+<footer class="footer bg-white border-top mt-4">
 	<?php if ( have_rows( 'system', 'option' ) ) : ?>
 		<div class="footer__location location pt-4 pt-lg-6">
 			<div class="container">

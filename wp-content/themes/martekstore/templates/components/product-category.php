@@ -26,9 +26,9 @@ $query = new wp_query( $args );
 
 ?>
 
-<div class="product-category my-4 my-md-6">
-	<div class="container">
-		<div class="product-category__header d-flex justify-content-between align-items-center mb-2">
+<div class="product-category my-4">
+	<div class="container-lg">
+		<div class="product-category__header d-flex justify-content-between align-items-center mb-1">
 			<div class="product-category__heading d-flex align-items-center">
 				<?php if ( $icon ) : ?>
 					<img class="product-category__icon mr-2" src="<?php echo $icon['url'] ?>"

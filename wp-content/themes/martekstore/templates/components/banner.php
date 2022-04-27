@@ -1,6 +1,6 @@
 <?php if ( $layout = get_sub_field( 'layout' ) ) : ?>
-	<div class="banner py-4 py-md-6">
-		<div class="container">
+	<div class="banner my-4">
+		<div class="container-lg">
 			<div class="row">
 				<?php
 				$layout_name = str_replace( '_', '-', $layout );

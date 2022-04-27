@@ -71,7 +71,7 @@ $h5-font-size: 0.625rem !default;
 $h6-font-size: 0.625rem !default;
 
 $headings-font-weight: 700 !default;
-$headings-color: #515151 !default;
+$headings-color: #282828 !default;
 
 // Body
 //
@@ -198,6 +198,20 @@ $input-btn-focus-width: 0 !default;
 	img {
 		width: 210px;
 		height: auto;
+	}
+}
+
+.category {
+	&__items {
+		@include media-breakpoint-down(sm) {
+			overflow-x: auto;
+		}
+	}
+
+	&__item {
+		@include media-breakpoint-down(sm) {
+			flex-basis: 82%;
+		}
 	}
 }
 
