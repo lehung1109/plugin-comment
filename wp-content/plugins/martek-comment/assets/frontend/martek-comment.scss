@@ -1,0 +1,168 @@
+.comments {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.comment-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 17px;
+  color: #00597d;
+  padding-right: 20px;
+}
+
+.comment-tab {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  font-size: 14px;
+
+  li {
+    a {
+      cursor: pointer;
+      color: #3366ff;
+      font-weight: 600;
+    }
+
+    span {
+      color: #333;
+      padding-left: 8px;
+      padding-right: 10px;
+    }
+
+    &.active {
+      a {
+        color: #00597d;
+      }
+    }
+  }
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #c9e8ff;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+}
+
+.comment-form-item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  textarea {
+    border: 1px solid #4ac1f0;
+    padding: 10px;
+    height: 120px;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+  }
+
+  input[type="text"],
+  input[type="tel"] {
+    width: 100%;
+    font-size: 13px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 12px;
+    outline: none;
+  }
+}
+
+.comment-form-action {
+  text-align: center;
+}
+
+.comment-form {
+  margin-bottom: 20px;
+}
+
+.comment-button {
+  background: #f26649;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 45px;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    background: #e2492a;
+    color: #fff;
+  }
+}
+
+.comment-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s;
+
+  &.is-show {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: inherit;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: #00597d;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin: 0 0 20px !important;
+    border-bottom: 1px solid #00597d;
+    font-size: 14px;
+  }
+
+  &__subtitle {
+    color: #00597d;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+.comment-popup-box {
+  max-width: 385px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.comment-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+
+  svg {
+    width: 17px;
+    height: auto;
+    stroke: #676767;
+    stroke-linecap: round;
+    stroke-width: 5;
+  }
+}

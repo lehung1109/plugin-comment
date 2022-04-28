@@ -62,9 +62,8 @@ get_header();
 						</div>
 					<?php endif; ?>
 
-					<?php if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
+					<?php
+						echo do_shortcode('[martek-comment-post-type]');
 				endwhile;
 				?>
 
