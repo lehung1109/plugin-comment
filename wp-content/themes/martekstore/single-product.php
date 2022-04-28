@@ -164,7 +164,7 @@ get_header();
 
 				<?php if ( is_active_sidebar( 'shop-sidebar' ) ) : ?>
 					<div class="col-md-4 px-1 px-lg-2">
-						<div class="bg-white rounded shadow-sm p-3">
+						<div class="sticky-top bg-white rounded shadow-sm p-3">
 							<?php dynamic_sidebar( 'shop-sidebar' ); ?>
 						</div>
 					</div>
