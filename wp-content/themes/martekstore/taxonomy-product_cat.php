@@ -22,8 +22,9 @@ get_header(); ?>
 
 	<main class="main" id="main">
 		<div class="container-lg">
-			<?php yoast_breadcrumb( '<nav class="yoast-breadcrumb font-size-14 mt-2" id="breadcrumbs">','</nav>' ); ?>
-			<hr class="mt-1 mb-2">
+			<?php if ( function_exists( 'yoast_breadcrumb' ) ) {
+				yoast_breadcrumb( '<nav class="yoast-breadcrumb font-size-14 border-bottom pt-2 pb-1 mb-2" id="breadcrumbs">', '</nav>' );
+			} ?>
 			<div class="page__header">
 				<h1>
 					<?php

@@ -13,9 +13,9 @@ defined( 'ABSPATH' ) || exit;
 	<a class="product-card__img d-block bg-gradient-light ratio rounded-lg mb-2 mb-xl-3" href="<?php the_permalink(); ?>">
 		<?php the_post_thumbnail( 'full', [ 'alt' => get_the_title(), 'class' => 'w-100 h-100'] ); ?>
 	</a>
-	<h3 class="flex-grow-1">
-		<a class="product-card__link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-	</h3>
+	<div class="flex-grow-1">
+		<a class="product-card__link font-weight-bold" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+	</div>
 	<?php echo kk_star_ratings( get_the_ID() ); ?>
 	<div class="product-card__price my-2">
 		<?php echo mp_get_price_html( get_the_ID() ); ?>
