@@ -3,6 +3,7 @@
 use Premmerce\SDK\V2\FileManager\FileManager;
 use MartekComment\Admin\Admin;
 use MartekComment\Frontend\Frontend;
+use MartekComment\Ajax\Ajax;
 
 /**
  * Class MartekCommentPlugin
@@ -38,6 +39,7 @@ class MartekCommentPlugin {
 			new Frontend( $this->fileManager );
 		}
 
+        new Ajax( $this->fileManager );
 	}
 
     /**

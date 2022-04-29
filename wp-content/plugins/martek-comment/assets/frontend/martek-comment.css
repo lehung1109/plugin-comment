@@ -149,4 +149,118 @@
   stroke-width: 5;
 }
 
+.comment-popup-thank-you-content {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+  height: 0;
+}
+.comment-popup-thank-you-content.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: inherit;
+  height: 100%;
+}
+
+.comment-popup-form-content {
+  display: none;
+}
+.comment-popup-form-content.active {
+  display: block;
+}
+
+.comment-avatar {
+  width: 25px;
+  height: 25px;
+  background-color: #ddd;
+  text-transform: uppercase;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.comment-author-name {
+  font-size: 16px;
+  color: #333;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.admin-name {
+  background: #f1c40f;
+  border-radius: 2px;
+  padding: 0 5px;
+  border: 1px solid #f1c40f;
+  font-size: 11px;
+  color: #333;
+}
+
+.comment-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.comment-description {
+  font-size: 14px;
+  color: #333;
+}
+
+.comment-info {
+  margin-bottom: 5px;
+}
+
+.reply {
+  margin-right: 5px;
+}
+.reply__link {
+  font-size: 13px;
+  color: #288ad9;
+  cursor: pointer;
+}
+.reply__link:hover {
+  color: #288ad9;
+}
+.reply__published-date {
+  font-size: 13px;
+}
+
+.comment-bottom {
+  color: #999;
+  display: flex;
+  align-items: center;
+}
+
+.comment-children {
+  margin: 10px 0 10px 35px;
+  padding: 15px 10px;
+  background: #f1f1f1;
+  position: relative;
+}
+.comment-children:before {
+  top: -19px;
+  left: 20px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(231, 231, 231, 0);
+  border-bottom-color: #f1f1f1;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+.comment-list__item {
+  margin-bottom: 20px;
+}
+.comment-list__item:last-child {
+  margin: 0;
+}
+
 /*# sourceMappingURL=martek-comment.css.map */

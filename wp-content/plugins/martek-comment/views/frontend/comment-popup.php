@@ -3,7 +3,7 @@
 <div class="comment-popup">
     <div class="comment-popup__inner">
         <div class="comment-popup-box">
-            <div class="comment-popup__content">
+            <div class="comment-popup__content comment-popup-form-content active">
                 <div class="comment-popup__title">GỬI Bình luận</div>
 
                 <div class="comment-popup__subtitle">Nhập thông tin của bạn</div>
@@ -21,6 +21,18 @@
                         <a class="comment-button js-comment-submit">HOÀN THÀNH</a>
                     </div>
                 </div>
+
+                <div class="comment-popup-close js-comment-popup-close">
+                    <svg viewBox="0 0 40 40">
+                        <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="comment-popup__content comment-popup-thank-you-content">
+                <div class="comment-popup__title">GỬI Ý KIẾN THÀNH CÔNG</div>
+
+                <div class="comment-popup__subtitle">Inox quang huy đã nhận được ý kiến của bạn. Chúng tôi sẽ phản hồi lại bạn trong thời gian sớm nhất. Xin cảm ơn !</div>
 
                 <div class="comment-popup-close js-comment-popup-close">
                     <svg viewBox="0 0 40 40">

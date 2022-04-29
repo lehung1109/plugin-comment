@@ -40,6 +40,7 @@ class Ajax {
 		$name = ! empty( $_POST['name'] ) ? sanitize_text_field( $_POST['name'] ) : 0;
 		$phone = ! empty( $_POST['phone'] ) ? sanitize_text_field( $_POST['phone'] ) : 0;
 		$comment_type = ! empty( $_POST['comment_type'] ) ? sanitize_text_field( $_POST['comment_type'] ) : 'question';
+		$comment_parent_id = ! empty( $_POST['comment_parent_id'] ) ? sanitize_text_field( $_POST['comment_parent_id'] ) : 0;
 		$errors = [];
 
 		if ( empty( $name ) ) {
@@ -66,7 +67,7 @@ class Ajax {
 			'comment_approved' => 0,
 			'comment_author' => $name,
 			'comment_content' => $description,
-			'comment_parent' => 0,
+			'comment_parent' => $comment_parent_id,
 			'comment_post_ID' => $post_id,
 			'comment_type' => $comment_type,
 			'user_id' => $user_id
@@ -74,7 +75,7 @@ class Ajax {
 
 		if ( empty( $comment_id ) || is_wp_error( $comment_id ) ) {
 			wp_send_json_error([
-				'error' => 'Có lỗi xảy ra, vui lòng thử lại sau.'
+				'errors' => 'Có lỗi xảy ra, vui lòng thử lại sau.'
 			]);
 			die;
 		}
@@ -82,7 +83,7 @@ class Ajax {
 		update_field( 'phone', $phone, 'comment_' . $comment_id );
 
 		wp_send_json_success([
-			'error' => false
+			'errors' => false
 		]);
 		die;
     }
